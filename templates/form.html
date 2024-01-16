@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>FUTPREDICTOR</title>
+</head>
+
+<body>
+    <h1>FUTPREDICTOR</h1>
+    <form class="form" method="POST" action="/api/FUTPREDICTOR">
+        {{ form.csrf_token }}
+        <div>
+            {{ form.age.label }} {{ form.age }}
+        </div>
+        <div>
+            {{ form.position.label }} {{ form.position }}
+        </div>
+        <div>
+            {{ form.current_club.label }} {{ form.current_club }}
+        </div>
+        <div>
+            {{ form.nationality.label }} {{ form.nationality }}
+        </div>
+        <div>
+            {{ form.goals_home.label }} {{ form.goals_home }}
+        </div>
+        <div>
+            {{ form.goals_away.label }} {{ form.goals_away }}
+        </div>
+        <div>
+            {{ form.assists_home.label }} {{ form.assists_home }}
+        </div>
+        <div>
+            {{ form.assists_away.label }} {{ form.assists_away }}
+        </div>
+        <div>
+            {{ form.penalty_goals.label }} {{ form.penalty_goals }}
+        </div>
+        <div>
+            {{ form.penalty_misses.label }} {{ form.penalty_misses }}
+        </div>
+        <div>
+            {{ form.conceded_home.label }} {{ form.conceded_home }}
+        </div>
+        <div>
+            {{ form.yellow_cards_overall.label }} {{ form.yellow_cards_overall }}
+        </div>
+        <div>
+            {{ form.red_cards_overall.label }} {{ form.red_cards_overall }}
+        </div>
+        <div>
+            {{ form.assists_per_90_overall.label }} {{ form.assists_per_90_overall }}
+        </div>
+        <div>
+            {{ form.min_per_goal_overall.label }} {{ form.min_per_goal_overall }}
+        </div>
+        <div>
+            {{ form.conceded_per_90_overall.label }} {{ form.conceded_per_90_overall }}
+        </div>
+        <div>
+            {{ form.min_per_conceded_overall.label }} {{ form.min_per_conceded_overall }}
+        </div>
+        <div>
+            {{ form.min_per_card_overall.label }} {{ form.min_per_card_overall }}
+        </div>
+        <div>
+            {{ form.min_per_assist_overall.label }} {{ form.min_per_assist_overall }}
+        </div>
+        <div>
+            {{ form.cards_per_90_overall.label }} {{ form.cards_per_90_overall }}
+        </div>
+        
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+</body>
+</html>

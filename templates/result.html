@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado del Modelo Neuronal</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1529900748604-07564a03e7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80.png");
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #7a2828;
+            margin-top: 20px;
+            font-size: 80px;
+        }
+        
+        p {
+            color: #61a712;
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Resultado</h1>
+            <p>Stay: {{ result['Stayed'] }}</p>
+            <p>Transfer {{ result['Transferred'] }}</p>
+        </div>
+    </div>
+</body>
+</html>
